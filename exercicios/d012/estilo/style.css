@@ -60,6 +60,9 @@ section{
         font-family: var(--font3);
         font-size: 3.5vw;
 }
+section > p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
