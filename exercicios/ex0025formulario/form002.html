@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>usuario e senha</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <h1>Teste de Formulario</h1>
-    <form action="cadastro.php" method="get"></form>
+    <form action="cadastro.php" method="get" autocomplete="on"></form>
     <p>
         <label for="iusu">Usuario</label>
-        <input type="text" name="usu" id="iusu">
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="digite seu usuario" autocomplete="username">
         <p>
             <label for="isen">Senha</label>
-            <input type="password" name="sen" id="isen">
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="" placeholder="digite sua senha" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
